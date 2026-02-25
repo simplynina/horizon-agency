@@ -1,0 +1,382 @@
+/* Documento Geral */
+
+/* <weight>: Use a value from 400 to 800 */
+
+body {
+  background-color: #FFFAFF;
+  color: #303036;
+  font-family: 'Wix Madefor Text', sans-serif;
+  font-weight: 400;
+  margin: 25px;
+}
+
+a {
+  color: #303036;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* Header & Navbar */
+
+#navigationlinks {
+  padding-right: 80px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 15px;
+  gap: 100px;
+}
+
+#agencylogo {
+  display: inline-flex;
+  flex-basis: auto;
+  align-self: center;
+  width: 80px;
+  height: auto;
+}
+
+/* Home Page */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 80px 0px;
+}
+
+h1 {
+  font-size: 65px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#mainparagraph {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: 800;
+}
+
+#valores {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  list-style-type: none;
+  gap: 20px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#saibamais {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #FFFAFF;
+  background-color: #303036;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+/* Contact section CTA: rounded, centered, uppercase */
+.contact-cta {
+  display: block;
+  margin: 30px auto 16px;
+  padding: 14px 28px;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #FFFAFF;
+  background-color: #303036;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(48,48,54,0.10);
+}
+
+@media (max-width: 520px) {
+  .contact-cta { padding: 10px 20px; font-size: 16px; }
+}
+
+/* Clean centered intro for contact section */
+.contact-intro {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  color: #505056;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 0 12px;
+}
+
+@media (max-width: 520px) {
+  .contact-intro { font-size: 15px; }
+}
+
+/* Sobre Nós */
+
+#sobrenos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  padding: 28px 20px;
+}
+
+#titulo2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+
+#aboutus {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#servicosbtn {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #FFFAFF;
+  background-color: #303036;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+/* About card: centered rounded rectangle */
+.about-card {
+  width: 100%;
+  max-width: 900px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+  border-radius: 16px;
+  padding: 36px 40px;
+  box-shadow: 0 10px 28px rgba(48,48,54,0.08);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.about-card #titulo2 {
+  margin: 0 0 12px 0;
+  font-size: 32px;
+}
+
+.about-card #aboutus {
+  margin: 0;
+  color: #505056;
+  font-size: 18px;
+}
+
+@media (max-width: 520px) {
+  .about-card {
+    padding: 22px;
+  }
+  .about-card #titulo2 {
+    font-size: 24px;
+  }
+}
+
+/* Button inside about card */
+.about-card #servicosbtn {
+  margin: 20px auto 0;
+  display: inline-block;
+  padding: 12px 26px;
+  font-size: 16px;
+}
+
+/* Social icons */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+.socials img {
+  width: 22px;
+  height: auto;
+  display: block;
+  filter: grayscale(20%);
+  transition: transform .16s ease, filter .16s ease;
+}
+
+/* Slightly different spacing when socials live inside the about card */
+.about-card .socials {
+  margin-top: 14px;
+  gap: 10px;
+  justify-content: center;
+}
+.socials a:hover img {
+  transform: translateY(-4px) scale(1.05);
+  filter: none;
+}
+
+/* Serviços */
+#servicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#ourservices {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Services layout: responsive grid of rounded boxes */
+#servicinhos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.service {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 6px 18px rgba(48,48,54,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(48,48,54,0.12);
+}
+
+.service-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+}
+
+.service-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #505056;
+  margin: 0;
+}
+
+/* Footer: center content */
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 24px 0;
+  color: #505056;
+}
+
+footer h3 { margin: 0; font-size: 18px; font-weight: 800; }
+footer p { margin: 0; font-size: 14px; color: #6d6d73; }
+
+/* Rounded contact form and fields (keeps .contact-cta untouched) */
+#contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 36px 20px;
+}
+
+#formulario {
+  width: 100%;
+  max-width: 920px;
+  background: linear-gradient(180deg, #ffffff 0%, #fafafb 100%);
+  border-radius: 20px;
+  padding: 34px;
+  box-shadow: 0 16px 36px rgba(48,48,54,0.08);
+  box-sizing: border-box;
+  display: grid;
+  gap: 14px;
+}
+
+#formulario > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#formulario label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #303036;
+}
+
+#formulario input,
+#formulario textarea,
+#formulario select {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #e9e9ee;
+  background: #ffffff;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#formulario textarea { min-height: 120px; resize: vertical; }
+
+#formulario input:focus,
+#formulario textarea:focus,
+#formulario select:focus {
+  border-color: rgba(48,48,54,0.16);
+  box-shadow: 0 10px 30px rgba(48,48,54,0.06);
+}
+
+#formulario button[type="submit"] {
+  margin: 6px auto 0;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #FFFAFF;
+  background-color: #303036;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  #formulario { padding: 20px; }
+  #formulario input, #formulario textarea, #formulario select { font-size: 14px; }
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon Agency</title>
+  <link rel="stylesheet" href="css/styles.css"><!-- Link to CSS -->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabeçalho e Navegação -->
+<header>
+  <nav>
+    <ul id="navigationlinks">
+      <li><a href="index.html" id="agencyname">Horizon Agency</a></li>
+      <li><img src="imgs/logo.png" alt="Horizon Agency logo" id="agencylogo"></li>
+      <li><a href="#contactus" id="contact-link">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Homepage -->
+  <main>
+    <section id="introducao">
+      <h1>Revolucione a sua marca</h1>
+      <p id="mainparagraph"><strong>Na Horizon Agency, não seguimos tendências; nós as antecipamos.</strong><br> 
+        Combinamos uma visão estratégica profunda com criatividade revolucionária para elevar marcas além do óbvio. <br>
+        Sua empresa não precisa de mais do mesmo, ela precisa do <strong><em>horizonte</em></strong></p>
+      <ul id="valores">
+        <li>Visionária</li>
+        <li>Criativa</li>
+        <li>Revolucionária</li>
+      </ul>
+    </section>
+  </main>
+  <button id="saibamais">Saiba Mais</button>
+
+  <!-- Sobre Nós: -->
+   <section id="sobrenos">
+    <div class="about-card">
+      <h2 id="titulo2">Sobre Nós</h2>
+      <p id="aboutus">Somos a faísca revolucionária para negócios que buscam protagonismo. <br>
+        Na Horizon, transformamos ideias visionárias em resultados reais, <br>
+        utilizando o design e o marketing digital para redefinir as regras do seu mercado.</p>
+      <button id="servicosbtn">Nossos Serviços</button>
+
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><img src="imgs/linkedin.png" alt="LinkedIn logo"></a>
+        <a href="#" aria-label="Facebook"><img src="imgs/facebook.png" alt="Facebook logo"></a>
+        <a href="#" aria-label="Instagram"><img src="imgs/instagram.png" alt="Instagram logo"></a>
+      </div>
+    </div>
+   </section>
+
+<!-- Serviços: -->
+ <section id="servicos">
+  <h2 id="ourservices">Nossos Serviços</h2>
+
+  <section id="servicinhos">
+    <div class="service">
+      <h3 class="service-title" id="branding">Branding & Identidade Visual</h3>
+      <p class="service-desc" id="p1">Onde a essência encontra o impacto. <br>
+        Não criamos apenas logotipos; construímos ecossistemas visuais que ditam o ritmo do mercado. <br>
+        Através de um design disruptivo e uma narrativa de marca poderosa, transformamos empresas comuns em ícones culturais que são impossíveis de ignorar.</p>
+    </div>
+
+    <div class="service">
+      <h3 class="service-title" id="estrategia">Estratégia Digital</h3>
+      <p class="service-desc" id="p2">Utilizamos análise de dados avançada e inteligência criativa para mapear oportunidades antes da concorrência. <br>
+        Desenvolvemos campanhas que não apenas geram tráfego, mas expandem a presença da sua marca para novos horizontes de crescimento.</p>
+    </div>
+
+    <div class="service">
+      <h3 class="service-title" id="performance">Perfomance Criativa</h3>
+      <p class="service-desc" id="p3">Unimos a arte da criatividade com a ciência da performance. <br>
+        Seja através de conteúdo de alto impacto, tráfego pago otimizado ou interfaces imersivas, <br>
+        nossa missão é converter a atenção do público em resultados sólidos, quebrando barreiras entre marca e consumidor.</p>
+    </div>
+  </section>
+ </section>
+
+<!-- Contato: -->
+ <section id="contactus">
+  <button type="button" class="contact-cta">Inicie sua Revolução</button>
+    <p class="contact-intro">Preencha os dados abaixo e vamos expandir seu horizonte juntos.</p>    
+    <form action="#" method="POST" id="formulario">
+        <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required>
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email@suaempresa.com" required>
+        </div>
+
+        <div>
+            <label for="servico">Serviço de Interesse:</label>
+            <select id="servico" name="servico" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="branding">Branding Revolucionário</option>
+                <option value="estrategia">Estratégia Digital Visionária</option>
+                <option value="performance">Experiências de Performance</option>
+                <option value="outros">Outros Projetos</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="mensagem">Conte-nos sobre seu desafio:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva brevemente o que sua marca precisa..."></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Solicitar Orçamento</button>
+        </div>
+    </form>
+ </section>
+  <footer>
+   <h3>Horizon Agency</h3>
+   <p>&copy; 2026 Horizon Agency. Todos os direitos reservados. <strong>A revolução é agora.</strong></p>
+  </footer>
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
